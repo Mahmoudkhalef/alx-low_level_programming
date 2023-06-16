@@ -1,5 +1,3 @@
-#include <stdlib.h>
-#include <time.h>
 #include <sydio,h>
 
 
@@ -9,7 +7,7 @@
  * description: positive or negative
  *
  * return : 0 (success)
- */
+*/
 int main(void)
 {
 	int n;
