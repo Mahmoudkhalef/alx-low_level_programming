@@ -4,9 +4,9 @@
 /**
  * main . entry point
  *
- * description: positive or negative
+ * Description: positive or negative
  *
- * return : 0 (success)
+ * Return : 0 (success)
 */
 int main(void)
 {
