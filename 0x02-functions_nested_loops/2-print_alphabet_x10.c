@@ -6,6 +6,8 @@
 */
 
 void print_alphabet_x10(void)
+
+	return(void)
 {
 	int line, ch;
 
