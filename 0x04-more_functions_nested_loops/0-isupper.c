@@ -3,12 +3,12 @@
 /**
  * _isupper - check if c is upper
  *
- * 0c: input for alphabet
+ * Oc: input for alphabet
  *
  * Return: 1 if its uppercase, 0 if not
 */
 
-int _isUpper(int c)
+int _isupper(int c)
 {
 	if (c >= 65 && c <= 90)
 		return (1);
