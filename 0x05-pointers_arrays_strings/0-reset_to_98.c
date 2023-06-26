@@ -2,7 +2,7 @@
 
 /**
  * reset_to_89 -takes a pointer to an int parameter
- * 		and updates the vaiue it points to 98
+ *		and updates the vaiue it points to 98
  *
  * @n: int parameter
  *
