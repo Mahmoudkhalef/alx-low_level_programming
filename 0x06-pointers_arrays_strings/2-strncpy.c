@@ -11,7 +11,7 @@
  * Return: @dest
 */
 
-char *_strncoy(char *dest, char *src, int n)
+char *_strncpy(char *dest, char *src, int n)
 {
 	int i;
 
@@ -25,9 +25,9 @@ char *_strncoy(char *dest, char *src, int n)
 	for (i = 0; i < n && src[i] != '\0'; i++)
 		dest[i] = src[i];
 	/**
-	 * if the length of source is less than n 
-	 * write additional nullbytes to dest to 
-	 * ensure that a total of n bytes is written
+	* if the length of source is less than n
+	* write additional nullbytes to dest to
+	* ensure that a total of n bytes is written
 	*/
 	while (i < n)
 	{
