@@ -2,7 +2,8 @@
 
 /**
  * reverse_array - reverses the content of an array of integers.
- * @a: an array of elements to swap
+ * @a: an array of integers
+ * @n: the number of elements to swap
  *
  * Return: nothing.
 */
@@ -15,6 +16,6 @@ void reveerse_array(int *a, int n)
 	{
 		t = a[i];
 		a[i] = a[j];
-		a[jj] = t;
+		a[j] = t;
 	}
 }
