@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * infinite_add - adds two numbers
+ * infinite_add -  adds two numbers
  * @n1: first number
- * @n2:second number
+ * @n2: second number
  * @r: result
  * @size_r: result lenght
  * Return: sum
@@ -38,7 +38,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 		else
 			s = 0;
 		r[k] = (f + s + d) % 10 + '0';
-		d = (f + s + d) 10;
+		d = (f + s + d) / 10;
 	}
 	if (d == 1)
 	{
