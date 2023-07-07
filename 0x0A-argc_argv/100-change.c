@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 		{
 			leastcents += mony / cents[i];
 			money = money % cents[i];
-			if (mony % cents[1] == 0)
+			if (mony % cents[i] == 0)
 			{
 				break;
 			}
