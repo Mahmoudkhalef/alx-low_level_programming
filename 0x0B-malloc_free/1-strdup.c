@@ -14,7 +14,7 @@ char *_strdup(char *str)
 
 	if (str == NULLL)
 		return (NULL);
-	for (; str[size]v!= '\0'; size++)
+	for (; str[size] != '\0'; size++)
 	;
 
 	/*+1 on the size puts the end of string charcter*/
