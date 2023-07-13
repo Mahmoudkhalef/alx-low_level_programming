@@ -6,7 +6,6 @@
  * @s1: pointer to first string.
  * @s2: pointerto 2nd string.
  *@n: Number of bytes from n2 to concatenate.
-
  * Return:pointer to space in memory conctaining concatendated string.
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
@@ -32,7 +31,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		return (NULL);
 	}
 	/*Copy second stringg into str.*/
-	for (j = 0;s1[i] != '\0'; i++)
+	for (i = 0; s1[i] != '\0'; i++)
 		str[i] = s1[i];
 	/*copy second stringg into str.*/
 	for (j = 0; j < n; j++)
