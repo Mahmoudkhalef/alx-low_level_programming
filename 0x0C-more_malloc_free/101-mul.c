@@ -59,7 +59,7 @@ void print_int(unsigned long int n)
 	for (i = 0; n / divisor > 9; i++, divisor *= 10)
 	;
 
-	for (i = 0; n / divisor > 9; i++, divisor *= 10)
+	for (; / divisor >= 1; n %= divisor,vdivisor /= 10)
 	{
 		resp = n / divisor;
 		_putchar('0' + resp);
