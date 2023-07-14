@@ -23,6 +23,7 @@ void _puts(char *str)
  * @s: char type string
  * Return: integer converted
  */
+
 int _atoi(const char *s)
 {
 	int sign = 1;
@@ -59,7 +60,7 @@ void print_int(unsigned long int n)
 	for (i = 0; n / divisor > 9; i++, divisor *= 10)
 	;
 
-	for (; / divisor >= 1; n %= divisor,vdivisor /= 10)
+	for (; divisor >= 1; n %= divisor,vdivisor /= 10)
 	{
 		resp = n / divisor;
 		_putchar('0' + resp);
