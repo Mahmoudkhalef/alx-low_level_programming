@@ -49,11 +49,11 @@ char *_strcopy(char *dest, char *src)
  *	NULL if function fails
 */
 
-dog_t *new_dog(char *name, f;oat age, char *owner)
+dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *dog;
 
-	/* if name and owner are emptty and age is less than zero return null*/
+	/* if name and owner are empty and age is less than zero return null*/
 	if (!name || age < 0 || !owner)
 		return (NULL);
 
@@ -71,7 +71,7 @@ dog_t *new_dog(char *name, f;oat age, char *owner)
 	dog->owner = malloc(sizeof(char) * (_strlen(owner) + 1));
 	if ((*dog).owner == NULL)
 	{
-		free(dog-.name);
+		free(dog->name);
 		free(dog);
 		return (NULL);
 	}
