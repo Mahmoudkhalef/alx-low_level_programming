@@ -1,26 +1,46 @@
-#include "function_pointers.h"
-#include <stdlip.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
- * main - check the code for The School students.
- * @argc: the number of args
- * @argv: argument vector
+ * main - prints the opcodes of itself.
+ * @argc: The number of arguments supplied to the program.
+ * @argv: An array of pointers to the arguments.
  *
  * Return: Always 0.
  */
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
-	char *p = (char *)main;
-	int b;
+	int bytes, index;
+	int (*address)(int, char **) = main;
+	unsigned char opcode;
 
 	if (argc != 2)
-		printf("Error\n"), exit(1);
-	b = atoi(argv[1]);
-	if (b < 0)
-		printf("Error\n"), exit(2);
+	{
+		printf("Error\n");
+		exit(1);
+	}
 
-	while (b--)
-		printf("%02hhx%s", *p++, b ? " " : "\n");
+	bytes = atoi(argv[1]);
+
+	if (bytes < 0)
+	{
+		printf("Error\n");
+		exit(2);
+	}
+
+	for (index = 0; index < bytes; index++)
+	{
+		opcode = *(unsigned char *)address;
+		printf("%.2x", opcode);
+
+		if (index == bytes - 1)
+			continue;
+		printf(" ");
+
+		address++;
+	}
+
+	printf("\n");
+
 	return (0);
 }
