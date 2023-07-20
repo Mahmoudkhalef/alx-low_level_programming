@@ -25,6 +25,16 @@ void format_int(char *separator, va_list ap)
  * @separator: the string seprator
  * @ap: argument pointer
  */
+void format_float(char *separator, va_list ap)
+{
+	printf("%s%f", separator, va_arg(ap, double));
+}
+
+/**
+ * format_string - formats string
+ * @separator: the string seprator
+ * @ap: argument pointer
+ */
 void format_string(char *separator, va_list ap)
 {
 	char *str = va_arg(ap, char *);
