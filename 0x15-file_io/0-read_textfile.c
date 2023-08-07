@@ -3,7 +3,7 @@
 /**
  * read_textfile - reads text from a file and prints it
  * @filename: name of file to read
- * @letters:number bytes read/printed
+ * @letters: number of bytes to read
  *
  * Return:number bytes read/printed
  */
