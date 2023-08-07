@@ -5,7 +5,7 @@
  * @a: the string whose length to check
  *
  * Return: integer length of string
-*/
+ */
 int _strlen(char *s)
 {
 	int i = 0;
