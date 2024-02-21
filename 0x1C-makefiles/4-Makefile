@@ -1,0 +1,31 @@
+# Name of the compiler to be used.
+CC= gcc
+
+# Flages Used in the compilation process.
+CFLAGS= -Wall -Werror -Wextra -pedantic
+
+# The Source files to be compiled.
+SRC= main.c school.c
+
+# The object files to be created.
+OBJ= $(SRC:.c=.o)
+
+# Name of the executable.
+NAME= school
+
+# The program name used for deleting files
+RM= rm -f
+
+all: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
+
+.PHONY: clean oclean fclean re
+clean:
+	$(RM) *~ $(NAME)
+
+oclean:
+	$(RM) $(OBJ)
+
+fclean: clean oclean
+
+re: oclean all
